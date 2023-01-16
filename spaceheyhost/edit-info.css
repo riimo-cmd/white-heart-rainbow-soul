@@ -1,0 +1,8 @@
+
+
+.edit-info{
+  background-color: #color; /*This can also be a var(--variable) or a preset color*/
+  border: size style color; /*This can also be a var(--variable)*/
+  }
+  
+  /*you can add extra elements like background images or drop shadows too! go wild! :D*/

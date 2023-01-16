@@ -1,0 +1,444 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+
+/* this is where the colors are rooted */
+
+:root{
+    --headers: #9a0002;
+    --text: #A40a55; 
+    --names: #9a0002;
+    --links: #A40a55;
+    --hover: #9a0002;
+    --borders: 2px dashed #770737;
+    --background_image: url('https://www.publicdomainpictures.net/pictures/320000/velka/image-1584783071hJH.jpg');
+    --font-family: 'Sorts Mill Goudy', serif;
+    --curve: 10px;
+}
+
+/* this is where the colors for specific things are located */
+
+h3, h4, h5{color: var(--headers) !important;} /* headings*/
+a{color: var(--links) !important;} /* color of links */
+a:hover{color: var(--hover) !important;} /* color of links on hover */
+p, h2, .count {color: var(--text) !important;} /* color of text */
+.friends a p{color: var(--names) !important;} /* color of names, and friends counter */
+.friends a:hover p{color: var(--hover) !important;} /* color of names on hover */
+nav label{color: var(--text) !important;} /* color of search */
+.section h4 {color: var(--headers); !important;} /* aboutme & want2meet headings */
+.blurbs .heading {display:none;} /* hides the blurbs title */
+
+/* this is where your background image ends up being styled */
+
+body{
+    background-image: var(--background_image)!important;
+    background-color: lightpink;
+    background-reapeat: repeat;
+    background-size: 750px;
+}
+/* this is where your name appears */
+h1{
+    color: #9a0002;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px gray;
+}
+
+/* the navigation is adjusted here */
+nav{
+    background-color:lightpink ;
+    border: var(--borders);
+    border-radius: var(--curve);
+    margin-top:10px;
+}
+nav .top{
+    background: transparent;
+}
+nav .top a, nav .links a{
+    color: var(--text)!important;
+    text-shadow:none;
+}
+nav .links{
+    background-color: transparent;
+    border-radius: var(--curve);
+    text-align: center;
+}
+
+/* this is the line that appears between links in the header and footer.
+you can add an emoji or symbol instead of the default line it has */
+
+nav .links li:not(:last-child)::after,
+footer .links li:not(:last-child)::after{
+    content: " *";
+    color: var(--links);
+}
+
+/* this is the spacehey logo color.
+you can change it at https://codepen.io/sosuke/pen/Pjoqqp */
+
+}
+
+/* the search wrapper and button */
+
+.search-wrapper input[type=text] {
+    background-color: transparent !important;
+    border: 2px solid var(--text) !important;
+    color:var(--text) !important;
+    border-radius: var(--curve) !important;
+}
+
+button{
+    border-radius: var(--curve) !important;
+    border: 0px solid var(--text) !important;
+    font-family: var(--font-family) !important;
+    background-color: transparent !important;
+    color:var(--text) !important;
+}
+
+/* the online symbol and text */
+
+.online { visibility: hidden; } .online img { content: url("https://whiteheartrainbowsoul.neocities.org/spaceheyhost/mikuonline.png"); animation-name: none; visibility: visible; height: 290px; width: 290px; }
+
+/* font family for the headers, navigtion links, links, body text */
+
+h2, h3, h4, h5, .section{ 
+    font-family: var(--font-family) !important;	
+    font-size: 16px!important;
+    font-weight: bold;
+}
+a, p, nav label{
+    font-family: var(--font-family) !important;	
+    font-size: 14px!important;
+    font-weight: 1;
+ }
+/* the hr code.
+the hr is the horizontal line when you want to 
+separate important info or add a break in your paragraphs*/
+
+hr{
+    height:1px;
+    background: var(--links);
+    border: none;
+}
+
+/* this is where you adjust the borders and background */
+.blurbs, .friends, .profile .table, .blog-preview, .profile .table-section{
+    border-radius: var(--curve) !important;
+    border: var(--borders) !important;
+    background-color: lightpink;!important;
+}
+.icon{border:none !important;}
+.comment-replies{border:2px dashed white;} /* this is the border around the replies */
+.comment-reply:not(:first-child){border-top: 2px dashed var(--links);}  /* line in between comment replies*/
+
+/* your interest and comments table row background color */
+td{
+    background-color: transparent!important;
+}
+
+/* the middle section of your profile background color*/
+main{
+    background: transparent;
+    border-radius: var(--curve) !important;
+    border: transparent !important;
+    outline: none !important;
+}
+
+/* the interest table */
+.table-section{
+    border:none !important;
+    background-color: transparent!important;
+    border-radius: var(--curve) !important;
+}
+.details-table{
+    border-spacing:0px 10px;
+    background-color: lightpink;
+}
+.details-table td{
+    border-top:1px solid sienna;
+    padding:5px;
+}
+
+/* the header section of the boxes */
+.heading{
+    background-color: lightpink !important;
+    curve:var(--curve);
+}
+
+/* this is the box that says "Edit Info" when you're logged in,
+and to your friends it says "Profile Name is your friend". */
+
+.profile-info {
+    background-image: none;
+    background-color: lightpink;
+    color: white;
+    border: var(--borders) !important;
+    border-radius: var(--curve) !important;
+    padding:0px;
+}
+
+/* adjusting images borders and adding styling if you want to */
+    outline:none !important;
+    border-radius: var(--curve) !important;
+    padding: 4px;
+/* you can add text-align:center; if you want your friends to be centered */
+.friends-grid{
+    text-align: center;
+}
+.friends-grid img{
+    border-radius: var(--curve) !important;
+    filter: brightness(70%);
+}
+
+/* margin and padding */
+
+h2, h3, h4, h5, p{padding-left:5px !important;} /* this is important when you have rounded corners */
+.profile .table-section .heading, .blog-preview .heading, .profile .friends .heading{padding: 5px!important;}
+.friends{margin-bottom: 20px;}
+
+/*=== custom borders around the profile picture, mood and contact ===*/
+.general-about .details, .mood, .contact{
+    background-color: lightpink;
+    background-size: contain;
+}
+.general-about .details{
+  text-align: right;
+  margin-bottom: -5px;
+  padding-bottom:60px;
+  padding-right: 20px;
+  border-left: 2px dashed #770737!important;
+  border-right:2px dashed #770737!important;
+  border-top:2px dashed #770737;
+  border-radius: 20px 20px 0px 0px;
+}
+.profile .contact{
+     border-left: 2px dashed #770737;
+     border-right:2px dashed #770737;
+     border-bottom: 2px dashed #770737;
+     border-top: transparent;
+}
+.mood{
+    text-align: left;
+    border-left: 2px dashed #770737;
+    border-right: 2px dashed #770737;
+    border-top: transparent;
+}
+.profile .contact .heading h4{display:none;}
+.profile .contact a{font-size: 12px;}
+
+/*===================*/
+/* for this box, you can add an image of your choice. it's right under the contact box. */
+.url-info{
+    background: url('https://whiteheartrainbowsoul.neocities.org/spaceheyhost/patchwork.webp');
+    background-position: center;
+    background-size: cover;
+    border: var(--borders)!important;
+    border-radius: var(--curve);
+    height: 200px;
+}
+.url-info p{
+    opacity: 0.0;
+}
+
+/* this is the comments table scroll code. 
+you can delete this if you don't want a scroll box */
+
+.comments-table {
+    display: block;
+    height: 500px!important;
+    overflow-y: scroll;
+    border: 1px dashed white!important;
+    outline: none !important;
+    border-radius: 3px;
+    padding:5px;
+    background: url(https://whiteheartrainbowsoul.neocities.org/spaceheyhost/patchworkcomment.jpg)
+}
+
+/* this styles the first column */
+.comments-table td:first-child img{
+    border-radius: var(--curve);
+}
+.comments-table td:first-child{
+
+    background-image: none;
+    background-color: transparent;
+    background-size: 10em;
+    background-repeat: repeat;
+}
+
+.comments-table td{
+    background-image: url('');
+    background-size: 10em;
+    background-repeat: repeat;
+    border-bottom: 2px dashed sienna;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding:10px;
+    background-image: none;
+    background-color: transparent;
+}
+
+footer{
+    background: transparent;
+}
+
+
+.blog-preview :not(:first-child) {
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+.blog-preview :not(:first-child):before {
+    content: "";
+    display: block;
+    width: 96px;
+    height: 90px;
+    background: url('https://whiteheartrainbowsoul.neocities.org/spaceheyhost/minimiku.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.profile-pic img{
+    background-size: contain;
+    border-radius: 50%;
+
+
+}
+.mood P:nth-child(1) B, P:nth-child(2) B{
+    color: black!important;
+    text-shadow: 0px 2px 1px #ff9cb1;
+    font-family: 'Sorts Mill Goudy', serif;
+    letter-spacing: .8px;
+    font-size: 20px;
+    padding: 5px;
+}
+.profile-pic img{
+    background-size: contain;
+    border: 3px dashed #770737;
+}
+.online p{
+    text-transform: lowercase!important;
+
+}
+
+
+.mood:after {
+  content: "";
+  white-space: pre-wrap;
+  display: block;
+  height: 70px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 295px;
+}
+
+.mood:before {
+  content: "";
+  white-space: pre-wrap;
+  display: block;
+  height: 15px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 300px;
+}
+
+.contact:after {
+  content: "";
+  white-space: pre-wrap;
+  display: block;
+  height: 65px;
+  background-image: url(https://64.media.tumblr.com/d91f617045a431242464ff856050f20c/2e4c3da76e992f0b-d5/s540x810/f584761cde4377180153dec5c70fa3ff23b054cb.gifv);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 450px;
+}
+
+.blurbs:before {
+  content: "";
+  white-space: pre-wrap;
+  display: block;
+  height: 50px;
+  background-image: url(https://gifs.crd.co/assets/images/gallery03/03aa59c5.gif?v=5f0408ba);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 500px;
+}
+
+.blurbs:after {
+  content: "";
+  white-space: pre-wrap;
+  display: block;
+  height: 50px;
+  background-image: url(https://gifs.crd.co/assets/images/gallery03/03aa59c5.gif?v=5f0408ba);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 500px;
+}
+
+</style>
+
+<style>
+
+/* the navigation is adjusted here */
+footer{
+    background-color: lightpink;
+    border: var(--borders);
+    border-radius: var(--curve);
+    margin-top:10px;
+}
+footer .top{
+    background: transparent;
+}
+footer .top a, footer .links a{
+    color: var(--text)!important;
+    text-shadow:none;
+}
+footer .links{
+    background-color: transparent;
+    border-radius: var(--curve);
+    text-align: center;
+}
+
+/* this is the line that appears between links in the header and footer.
+you can add an emoji or symbol instead of the default line it has */
+
+footer .links li:not(:last-child)::after,
+footer .links li:not(:last-child)::after{
+    content: " *";
+    color: var(--links);
+}
+
+.general-about{
+  position: relative;
+  margin-top: 30px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #A40a55
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #9a0002;
+    border-style: 2px dashed#770737;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #fecdde;
+    border-radius: 10px;
+    border: 3px solid #ce3b60;
+  }
+

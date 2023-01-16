@@ -1,0 +1,490 @@
+<style>
+    /*==========⚠️==========
+* for colors go to https://htmlcolorcodes.com/color-names
+* for fonts go to https://fonts.google.com
+* for cursors go to https://icons8.com , https://custom-cursor.com , https://www.cursors-4u.com
+============⚠️==========*/
+
+    /* cursors */
+    @font-face {
+        font-family: "Noto Emoji Regular";
+        src: url('NotoEmoji-Regular.ttf') format('truetype');
+    }
+
+    /* cursors */
+
+    a:hover {
+        cursor: url('https://cur.cursors-4u.net/anime/ani-1/ani199.png'), auto;
+    }
+
+    * {
+        cursor: url('https://cur.cursors-4u.net/anime/ani-1/ani199.png'), auto;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+</style>
+<style>
+    :root {
+        --headers: #ff8000;
+        --text: #ff0000;
+        --names: #ff8000;
+        --links: #ff00ff;
+        --hover: #00ffff;
+        --borders: 1px solid #00ffff !important;
+        --background_image: url("https://whiteheartrainbowsoul.neocities.org/spaceheyhost/wallpaper_minecraft_warm_ocean_3840x2160.png");
+        --font-family: 'Gotu', sans-serif;
+        --curve: 0px;
+        --simple_bg: white;
+    }
+
+    main .left {
+        padding-right: 20px;
+    }
+
+    .url-info {
+        display: none !important;
+    }
+
+    /* to hide the url */
+    .blurbs .heading {
+        display: none !important;
+    }
+
+    /* to hide the blurbs heading */
+
+    h3,
+    h4,
+    h5,
+    .url-info b {
+        color: var(--headers) !important;
+    }
+
+    /* headings*/
+    a {
+        color: var(--links) !important;
+    }
+
+    /* color of links */
+    a:hover {
+        color: var(--hover) !important;
+    }
+
+    /* color of links on hover */
+    p,
+    h2 {
+        color: var(--text) !important;
+    }
+
+    /* color of text */
+    h1,
+    .friends a p {
+        color: var(--names) !important;
+    }
+
+    /* color of names, and friends counter */
+    h1,
+    .friends a:hover p {
+        color: var(--hover) !important;
+    }
+
+    /* color of names on hover */
+    nav label {
+        color: var(--links) !important;
+        text-shadow: none;
+    }
+
+    /* color of search */
+    .section h4 {
+        color: var(--headers) !important;
+        text-align: center;
+    }
+
+    /* aboutme & want2meet headings */
+    .comment-reply:not(:first-child) {
+        border-top: 3px double #80ff00;
+    }
+
+    /* line in between comment replies*/
+    .count {
+        color: #00ffff;
+    }
+
+    /* text decoration */
+
+    a:hover,
+    a:active,
+    .blog-entry .kudos-btn:hover,
+    .blog-entry .kudos-btn:active {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+    }
+
+    .logout-btn:hover,
+    .logout-btn:active {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+    }
+
+    nav .top a:hover {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+    }
+
+    nav .links a:hover {
+        text-shadow: none!important;
+    }
+    nav .links a{
+      text-shadow:none!important;}
+
+    /* font family */
+
+    h2,
+    h3,
+    h4,
+    h5,
+    a,
+    p,
+    nav label,
+    .section {
+        font-family: var(--font-family) !important;
+        font-size: 12px !important;
+    }
+
+    /* padding and margin */
+
+    .icon {
+        border: none !important;
+    }
+
+    .blurbs {
+        margin-top: 10px !important;
+        margin-bottom: 30px !important
+    }
+
+    .friends {
+        margin-top: -10px !important;
+        margin-bottom: 30px !important
+    }
+
+    .profile-info {
+        border-radius: var(--curve) !important;
+    }
+
+    .comment-replies {
+        border: 5px dotted #ff0;
+    }
+
+    .comments-table {
+        border-radius: var(--curve) !important;
+        border: none !important;
+    }
+
+    .table-section {
+        padding-bottom: 7px !important;
+        margin-top: 30px !important
+    }
+
+    #comments {
+        margin-top: 5px !important;
+        padding-bottom: 5px !important
+    }
+
+    .details p:last-child {
+        color: var(--links) !important;
+        filter: brightness(95%);
+    }
+
+    .mood {
+        margin-top: 20px;
+    }
+
+    /* background image */
+
+    body {
+        background-image: var(--background_image) !important;
+        background-color: #8000ff !important;
+    background: no-repeat center center fixed;
+  background-size: cover;
+    }
+
+    /* navigation */
+
+    /* change logo color at https://codepen.io/sosuke/pen/Pjoqqp */
+
+    nav {
+        background: white;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+        margin-bottom: 30px;
+        border: var(--borders);
+        text-shadow: none !important;
+    }
+
+    nav .top {
+        background: rgba(0, 0, 0, 0.0);
+    }
+
+    nav .top a {
+        color: #8000ff !important;
+    }
+
+    nav .links {
+        background: transparent !important;
+        text-align: center;
+        text-shadow: none!important;
+    }
+
+    nav img.logo {
+        filter: invert(54%) sepia(97%) saturate(2601%) hue-rotate(1deg) brightness(103%) contrast(105%);
+        !important;
+    }
+
+    nav .links li:not(:last-child)::after,
+    footer .links li:not(:last-child)::after {
+        content: " | ";
+        color: var(--headers);
+    }
+
+    /*============= color the search bar and button ===================*/
+
+    .search-wrapper input[type=text] {
+        background-color: rgba(0, 0, 0, 0.0) !important;
+        border: 2px solid #ff0000 !important;
+        color: #ff0000 !important;
+        border-radius: 0px !important;
+    }
+
+    button {
+        border-radius: 0px !important;
+        border: 0px solid #ff0000 !important;
+        font-family: var(--font-family) !important;
+        background-color: rgba(0, 0, 0, 0.0) !important;
+        color: #ff0000 !important;
+    }
+
+
+    /*============= profile name ===================*/
+
+    h1 {
+        padding-left: none !important;
+        font-family: 'Gotu', sans-serif;
+        font-size: 25px !important;
+        margin-top: -10px !important;
+        color: #ff8000 !important;
+    }
+
+    /*============= box shadows ===================*/
+
+    .mood,
+    .blog-preview,
+    .contact {
+        margin-bottom: 30px;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+    }
+
+    .table-section,
+    .blurbs,
+    .friends {
+        margin-bottom: 30px !important;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+    }
+
+    .friends {
+        margin-top: 10px !important;
+    }
+
+    .profile-info {
+        background: white;
+        border: var(--borders) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 5px;
+        margin-bottom: 30px;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+    }
+
+    .profile-info .inner {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .contact {
+        background: white;
+        padding: 20px;
+        margin-bottom: 40px !important;
+    }
+
+    main {
+background: none!important;
+    }
+
+    .friends-grid img {
+        outline: none !important;
+        filter: opacity(90%) !important;
+        border-radius: var(--curve) !important;
+    }
+
+    td {
+        background-color: transparent !important;
+    }
+
+    hr {
+        border-top: 1px solid #ff0000;
+    }
+
+    .heading,
+    .url-info,
+    .blurbs,
+    .friends,
+    .table,
+    .table-section,
+    footer {
+        border-radius: var(--curve) !important;
+        padding: 2px !important;
+        border: var(--borders) !important;
+    }
+
+    .friends,
+    .blurbs {
+        background: white;
+    }
+
+    .mood,
+    .contact,
+    .blog-preview {
+        border-radius: var(--curve) !important;
+        padding: 2px !important;
+        border: var(--borders) !important;
+    }
+
+    .mood,
+    .blog-preview {
+        text-align: center;
+        background: white;
+        border: var(--borders) !important;
+    }
+
+    .table-section {
+        border: var(--borders) !important;
+        background-color: white !important;
+        border-radius: var(--curve) !important;
+    }
+
+    .heading {
+        background: transparent !important;
+        padding-bottom: 4px !important;
+        background-size: 100%100% !important;
+        text-align: center;
+        border: none !important;
+    }
+
+    .comments-table {
+        display: block;
+        height: 500px !important;
+        overflow-y: scroll;
+        border: border: 1px dashed #80ff00; !important;
+        outline: none !important;
+        border: none !important;
+    }
+
+    .comments-table td {
+        background-image: url('') !important;
+        background-size: cover;
+        border: var(--borders);
+    }
+
+    .comments-table td:first-child img {
+        /* you can clip images at https://bennettfeely.com/clippy and add the code here */
+    }
+
+    footer {
+        color: var(--text);
+        text-align: center;
+        font-size: 60%;
+        margin: 10px 0 10px;
+        padding: 10px 5px;
+        background: white;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+    }
+</style>
+<style>
+    /* Force scrollbars onto browser window */
+
+    /* Scrollbar styles */
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 0px;
+        width: 2px;
+        border: 1px dotted #80ff00;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #00ffff;
+        border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #80ff00;
+    }
+
+    .online {
+        content: url(https://dl.glitter-graphics.com/pub/745/745455rvacxjsot2.gif);
+    }
+
+    /*======misc========*/
+
+    .profile .general-about {
+        background: #FFF;
+        margin: 0 1em 0 0;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+        length: 300px;
+    }
+
+    .profile h1 {
+        background: #FFF;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+    }
+
+
+    .table-section:not(:last-child) .details-table tr:nth-child(4) td:first-child p {
+        color: transparent !important;
+        text-shadow: none !important;
+        letter-spacing: -100px;
+    }
+
+    .table-section:not(:last-child) .details-table tr:nth-child(5) td:first-child p {
+        color: transparent !important;
+        text-shadow: none !important;
+        letter-spacing: -100px;
+    }
+
+    .table-section:not(:last-child) .details-table tr:nth-child(5) td:first-child p:before {
+        content: "Manga";
+        font-size: 12px;
+    }
+
+    .table-section:not(:last-child) .details-table tr:nth-child(4) td:first-child p:before {
+        content: "Animation";
+        font-size: 12px;
+    }
+
+    .edit-info {
+        background: white !important;
+        border: var(--borders) !important;
+        padding: 15px 5px;
+        margin-bottom: 30px;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+    }
+        .col.right{
+                        background: white !important;
+        border: var(--borders) !important;
+        padding: 15px 5px;
+        margin-bottom: 30px;
+        box-shadow: calc((400px + (25px * 2)) * 0.025) calc((400px + (25px * 2)) * 0.025) #ff0080;
+          }
+</style>

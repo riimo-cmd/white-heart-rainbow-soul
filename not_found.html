@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found :(</title>
+    <title>ERR 404: NOT FOUND</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <h1>Page Not Found D:</h1>
-    <p>(it was probably a broken link. sorry about that... ;-;)</p>
-  </body>
+    <link rel="icon" type="image/x-icon" href="bob.gif">
+</head>
+
+<body>
+    <div><iframe src="https://www.youtube.com/embed/4eZSP4uh2uI?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <style>
+        body {
+            background: rgb(56, 88, 249);
+            background: linear-gradient(326deg, rgba(56, 88, 249, 1) 0%, rgba(186, 3, 231, 1) 50%, rgba(252, 70, 107, 1) 100%);
+            ;
+        }
+
+        iframe {
+            border: none;
+            /* Reset default border */
+            height: 90vh;
+            /* Viewport-relative units */
+            width: 90vw;
+        }
+
+        div {
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgb(82 15 15 / 48%) 50%, rgb(0 0 0 / 0%) 50%);
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+    </style>
+</body>
+
 </html>
