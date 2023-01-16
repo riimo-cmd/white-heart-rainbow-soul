@@ -1,5 +1,4 @@
 # white-heart-rainbow-soul
-Backup of my neocities site
 
 Hello World! 
 
